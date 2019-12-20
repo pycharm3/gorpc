@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package message;
+
+// 订单请求参数
+message OrderRes{
+    string orderId = 1;
+    int64 timeStamp = 2;
+}
+
+// 订单信息
+message OrderInfo{
+    string orderId = 1;
+    string orderName = 2;
+    string orderStatus = 3;
+}
